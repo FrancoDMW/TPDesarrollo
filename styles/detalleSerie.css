@@ -1,0 +1,60 @@
+.articleDetalle{
+    display: flex;
+    justify-content: stretch;
+}
+
+.articleDetalleGrid{
+    display: grid;
+    grid-template-areas: "insert descrip"
+                         "boton     .   ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+.item-1{
+    grid-area: "insert";
+}
+
+.item-2{
+    grid-area: "descrip";
+}
+
+.item-3{
+    grid-area: "boton"
+}
+
+.sugeridosDetalle{
+    display: flex;
+    gap: 5px;
+}
+
+.descrip{
+    background-color: crimson;
+    border: 2px solid white;
+    margin: 20px;
+padding: 20px;
+}
+
+button{
+    width: 420px;
+    height: 50px;
+    color:white;
+    background-color: crimson;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 945px) {
+    .articleDetalleGrid{
+        display: grid;
+        grid-template-areas: "insert"
+                             "descrip"
+                             "boton";
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 300px 100px;
+        justify-items: center;
+        align-items: center;
+    }
+  }
