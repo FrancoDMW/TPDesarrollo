@@ -1,0 +1,87 @@
+.articlePerfilGrid{
+    display: grid;
+    grid-template-areas: "imgPerfil datosPerfil";
+    grid-template-columns: 25% 1fr;
+}
+
+.item-1{
+    grid-area: "imgPerfil";
+}
+
+.item-2{
+    grid-area: "datosPerfil";
+}
+
+.sectionImgPerfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.sectionDatosPerfil{
+    display: grid;
+    grid-template-areas: "columna1 columna2";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.articleButton{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 50px;
+}
+
+.columna1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.columna2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.inputCredito1{
+    width: 150px;
+}
+
+.inputCredito2{
+    width: 50px;
+}
+
+.botonGuardar{
+    background-color:forestgreen;
+}
+
+.botonCancelar{
+    background-color: red;
+}
+
+.imgPerfil{
+    width: 220px;
+    height: 200px;
+}
+
+@media screen and (max-width: 800px){
+    .articlePerfilGrid{
+        display: grid;
+        grid-template-areas: "imgPerfil" 
+                             "datosPerfil";
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 1fr;
+    }
+    .sectionDatosPerfil{
+        display: grid;
+        grid-template-areas: "columna1" 
+                             "columna2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

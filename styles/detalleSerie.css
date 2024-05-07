@@ -13,6 +13,11 @@
     align-items: center;
 }
 
+.sectionDescripcion{
+    display:flex;
+    justify-content:space-between;
+}
+
 .item-1{
     grid-area: "insert";
 }
@@ -67,9 +72,13 @@ button{
         width: 250px;
     }
     .articleDetalleGrid{
-        grid-template-rows: 400px 350px 150px;
+        grid-template-rows: 450px 420px 150px;
     }
     iframe{
         width: 300px;
+    }
+    .sectionDescripcion{
+        display:flex;
+        flex-direction: column;
     }
 }
