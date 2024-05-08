@@ -1,0 +1,54 @@
+.imgBanner{
+    max-width:100%;
+    border-radius: 5%;
+}
+
+.usuarioLogin{
+    display:grid;
+    grid-template-areas: "usuario textUsuario"
+                         "contraseña textContraseña";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 10px;
+}
+
+.item-1{
+    grid-area: "usuario";
+}
+
+.item-2{
+    grid-area: "textUsuario";
+}
+
+.item-3{
+    grid-area: "contraseña"
+}
+
+.item-4{
+    grid-area: "textContraseña"
+}
+
+.divIniciar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 10px;
+}
+
+.buttonPerfil{
+    background-color: white;
+    color: #dc143c;
+    border-radius: 12%;
+}
+
+.aPerfil{
+    font-size: 25px;
+    text-decoration: none;
+    color:white;
+    background-color:#dc143c;
+    border: 5px solid none;
+    border-radius: 10%;
+    padding: 10px;
+}
