@@ -2,6 +2,7 @@
     display: grid;
     grid-template-areas: "imgPerfil datosPerfil";
     grid-template-columns: 25% 1fr;
+    margin-top: 20px;
 }
 
 .item-1{
@@ -25,12 +26,14 @@
     grid-template-areas: "columna1 columna2";
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+    border: 2px solid white;
+    padding:10px
 }
 
 .articleButton{
     display: flex;
     justify-content:space-around;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .columna1{
@@ -83,5 +86,9 @@
                              "columna2";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    .articleButton{
+        margin-top: 100px;
+        margin-bottom: 20px;
     }
 }
