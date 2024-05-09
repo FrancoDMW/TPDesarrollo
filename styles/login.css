@@ -5,28 +5,10 @@
 
 .usuarioLogin{
     display:grid;
-    grid-template-areas: "usuario textUsuario"
-                         "contraseña textContraseña";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     row-gap: 10px;
-}
-
-.item-1{
-    grid-area: "usuario";
-}
-
-.item-2{
-    grid-area: "textUsuario";
-}
-
-.item-3{
-    grid-area: "contraseña"
-}
-
-.item-4{
-    grid-area: "textContraseña"
 }
 
 .divIniciar{

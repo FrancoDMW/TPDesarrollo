@@ -7,8 +7,6 @@ row-gap: 50px;
 
 .articleContra{
     display: grid;
-    grid-template-areas: "email emailLabel"
-                         "nombre nombreLabel";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
