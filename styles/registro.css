@@ -5,7 +5,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     border: 2px solid white;
-    padding:10px
+    padding: 10px;
 }
 
 .item-1 {
@@ -43,4 +43,30 @@
     background-color: white;
     color: crimson;
     font-size: large;
+}
+
+@media screen and (max-width: 710px) {
+    .gridRegistro {
+        display: grid;
+        grid-template-areas: "columna1 columna2"
+                             "          botones";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        border: 2px solid white;
+        padding: 10px;
+    }
+    .item-1 {
+        grid-area: "botones";
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .botonRegistro {
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+    
 }
