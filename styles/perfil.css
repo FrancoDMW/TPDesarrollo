@@ -1,16 +1,7 @@
 .articlePerfilGrid{
     display: grid;
-    grid-template-areas: "imgPerfil datosPerfil";
     grid-template-columns: 25% 1fr;
     margin-top: 20px;
-}
-
-.item-1{
-    grid-area: "imgPerfil";
-}
-
-.item-2{
-    grid-area: "datosPerfil";
 }
 
 .sectionImgPerfil{
@@ -23,7 +14,6 @@
 
 .sectionDatosPerfil{
     display: grid;
-    grid-template-areas: "columna1 columna2";
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     border: 2px solid white;
@@ -60,11 +50,15 @@
 }
 
 .botonGuardar{
-    background-color:forestgreen;
+    background-color: white;
+    color: crimson;
+    font-size: large;
 }
 
 .botonCancelar{
-    background-color: red;
+    background-color: white;
+    color: crimson;
+    font-size: large;
 }
 
 .imgPerfil{

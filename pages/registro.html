@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <nav>
+        <a class="aNav" href="../index.html">HOME</a>
+        <a class="aNav" href="../pages/vistaSerie.html">SERIES</a>
+        <a class="aNav" href="../pages/vistaPeli.html">PELICULAS</a>
+        <a class="aNav" href="../pages/perfil.html">PERFIL</a>
+    </nav>
+    <h1>Registrarse</h1>
+    <section class="gridRegistro">
+        <article class="columna1">
+            <label for="nombre">Nombre:</label>
+            <input type="text">
+            <label for="apellido">Apellido:</label>
+            <input type="text">
+            <label for="email">E-mail:</label>
+            <input type="text">
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text">
+            <label for="contraseña">Contraseña:</label>
+            <input type="text">
+            <label for="contraRepetir">Repetir Contraseña:</label>
+            <input type="text">
+        </article>
+        <article>
+            <h3>Metodo de pago:</h3>
+            <div class="columna2">
+                <input type="radio" name="miPago" id="credito">
+                <label for="credito">Tarjeta de credito</label>
+                <input class="inputCredito1" type="text" placeholder="Numero de tarjeta">
+                <input class="inputCredito2" type="text" placeholder="xxxxxxxxx">
+                <input type="radio" name="miPago" id="cupon">
+                <label for="cupon">Cupon de pago</label>
+                <div>
+                    <input type="checkbox">
+                    <label for="pagofacil">Pago Facil</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="rapipago">Rapipago</label>
+                </div>
+                <input type="radio" name="miPago" id="transferencia">
+                <label for="transferencia">Transferencia bancaria</label>
+                <p>
+                    CBU:
+                </p>
+                <p>
+                    2184655874652153
+                </p>
+            </div>
+        </article>
+        <article class="item item-1 botonRegistro">
+            <a href="../pages/login.html"><button class="buttonContra">
+                    Guardar cambios
+                </button></a>
+            <a href="../pages/login.html"><button class="buttonContra">
+                    Cancelar suscripcion
+                </button></a>
+        </article>
+    </section>
+</body>
+
+</html>
