@@ -5,9 +5,9 @@
 
 .usuarioLogin{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 200px 200px;
     grid-template-rows: 1fr 1fr;
-    justify-items: center;
+    justify-content:center;
     row-gap: 10px;
 }
 
@@ -16,13 +16,26 @@
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .buttonPerfil{
     background-color: white;
     color: #dc143c;
     border-radius: 12%;
+    width: 200px;
+}
+
+.divLogin{
+    display: flex;
+    justify-content: center;
+}
+
+.sectionLogin{
+    border: 2px solid white;
+    background-color: #dc143c;
+    padding: 3%;
+    width: 500px;
 }
 
 .aPerfil{
@@ -33,4 +46,13 @@
     border: 5px solid none;
     border-radius: 10%;
     padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .usuarioLogin{
+        grid-template-columns: 300px;
+        justify-items: center;
+    }
+    
+    
 }
