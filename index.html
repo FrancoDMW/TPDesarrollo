@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/login.css">
+    <script src="./js/index.js"></script>
     <title>Inicio Sesion</title>
 </head>
 
@@ -40,17 +41,19 @@
     </section>
     <div class="divLogin">
         <section class="sectionLogin">
+            <form id="formulario" action="#" method="get">
             <div class="usuarioLogin">
                 <label class="usuario" for="usuario">Nombre usuario:</label>
-                <input class="textUsuario" type="text">
+                <input id="textUsuario" class="textUsuario" type="text">
                 <label class="contraseña" for="contraseña">Contraseña:</label>
-                <input class="textContraseña" type="text">
+                <input id="textContraseña" class="textContraseña" type="text">
             </div>
             <div class="divIniciar">
-                <a href="./pages/home.html"><button class="buttonPerfil">Iniciar sesion</button></a>
+                <button id="enviar" class="buttonPerfil">Iniciar sesion</button>
                 <a href="./pages/recuperarContra.html"><button class="buttonPerfil">Recuperar Contraseña</button></a>
                 <a href="./pages/registro.html"><button class="buttonPerfil">Registrarse</button></a>
             </div>
+            </form>
         </section>
     </div>
 </body>
