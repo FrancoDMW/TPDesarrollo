@@ -4,6 +4,16 @@ window.onload = function () {
         event.preventDefault(); // Evitar el comportamiento predeterminado del formulario por el submit
         EnviarForm();
     });
+    var recuperar = document.getElementById("recuperarContra");
+    recuperar.addEventListener("click", function (event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del botón
+        window.location.href = "./pages/recuperarContra.html";
+    });
+    var registrarse = document.getElementById("registrarse");
+    registrarse.addEventListener("click", function (event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del botón
+        window.location.href = "./pages/registro.html";
+    });
 }
 
 function EnviarForm() {

@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/recuperarContra.css">
+    <script src="../js/recuperarContra.js"></script>
     <title>Recuperar contraseña</title>
 </head>
+
 <body>
     <nav>
         <a class="aNav" href="../pages/home.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg" height="20px"
-            viewBox="0 0 24 24" width="24px">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-        </svg>HOME</a>
-    <a class="aNav" href="../pages/vistaSerie.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg"
-            height="20px" viewBox="0 0 24 24" width="24px">
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-                d="M21 6h-7.59l3.29-3.29L16 2l-4 4-4-4-.71.71L10.59 6H3c-1.1 0-2 .89-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.11-.9-2-2-2zm0 14H3V8h18v12zM9 10v8l7-4z" />
-        </svg>SERIES</a>
-    <a class="aNav" href="../pages/vistaPeli.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg"
-            height="20px" viewBox="0 0 24 24" width="24px">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-                d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z" />
-        </svg>PELICULAS</a>
-    <a class="aNav" href="../pages/perfil.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg" height="20px"
-            viewBox="0 0 24 24" width="24px">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-        </svg>PERFIL</a>
+                viewBox="0 0 24 24" width="24px">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>HOME</a>
+        <a class="aNav" href="../pages/vistaSerie.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg"
+                height="20px" viewBox="0 0 24 24" width="24px">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                    d="M21 6h-7.59l3.29-3.29L16 2l-4 4-4-4-.71.71L10.59 6H3c-1.1 0-2 .89-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.11-.9-2-2-2zm0 14H3V8h18v12zM9 10v8l7-4z" />
+            </svg>SERIES</a>
+        <a class="aNav" href="../pages/vistaPeli.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg"
+                height="20px" viewBox="0 0 24 24" width="24px">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z" />
+            </svg>PELICULAS</a>
+        <a class="aNav" href="../pages/perfil.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg" height="20px"
+                viewBox="0 0 24 24" width="24px">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+            </svg>PERFIL</a>
     </nav>
     <section class="sectionBodyContra">
         <section class="sectionContra">
             <h1>Recuperar Contraseña</h1>
-            <article class="articleContra">
-                <label for="email">E-Mail:</label>
-                <input type="text">
-                <label for="nombreUsuario">Nombre de usuario:</label>
-                <input type="text">
+            <form id="formRecuperarContra" action="#">
+                <article class="articleContra">
+                    <label for="email">E-Mail:</label>
+                    <input id="email" type="text">
+                    <label for="nombreUsuario">Nombre de usuario:</label>
+                    <input id="usuario" type="text">
+            </form>
             </article>
             <article>
-                <a href="../index.html"><button class="buttonContra">Enviar email</button></a>
-                <a href="../index.html"><button class="buttonContra">Cancelar</button></a>
+                <button id="buttonEnviarMail" class="buttonContra" disabled>Enviar email</button>
+                <button id="buttonCancelar" class="buttonContra">Cancelar</button>
             </article>
         </section>
     </section>
 </body>
+
 </html>
