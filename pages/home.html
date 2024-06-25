@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
+    <script src="../js/home.js"></script>
     <title>Principal</title>
 </head>
 
@@ -15,13 +16,13 @@
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
             </svg>HOME</a>
-        <a class="aNav" href="../pages/vistaSerie.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg"
+        <a id="aSeries" class="aNav" ><svg class="svgNav" xmlns="http://www.w3.org/2000/svg"
                 height="20px" viewBox="0 0 24 24" width="24px">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                     d="M21 6h-7.59l3.29-3.29L16 2l-4 4-4-4-.71.71L10.59 6H3c-1.1 0-2 .89-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.11-.9-2-2-2zm0 14H3V8h18v12zM9 10v8l7-4z" />
             </svg>SERIES</a>
-        <a class="aNav" href="../pages/vistaPeli.html"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg"
+        <a id="aPeliculas" class="aNav"><svg class="svgNav" xmlns="http://www.w3.org/2000/svg"
                 height="20px" viewBox="0 0 24 24" width="24px">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path
@@ -54,7 +55,7 @@
     </section>
     <section class="sectionImagenes">
         <article class="gridImagenes">
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img src="../assets/images/Peliculas/01_Jumanji.jpg"
+            <div id="pelicula1" class="gridItem"><a href="../pages/detallePeli.html"><img src="../assets/images/Peliculas/01_Jumanji.jpg"
                         alt="peli1">
                     <div class="text">
                         <h3>
@@ -66,7 +67,7 @@
                             Sarah Whittle (Laura Bell Bundy) en 1969.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula2" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/02_Oblivion.jpg" alt="peli2">
                     <div class="text">
                         <h3>
@@ -79,7 +80,7 @@
                             y en ruinas.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula3" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/03_Inception.jpg" alt="peli3">
                     <div class="text">
                         <h3>
@@ -90,7 +91,7 @@
                             sueños para robar ideas, claves de bancos, etc. mientras sus víctimas duermen.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img
+            <div id="serie1" class="gridItem"><a href="../pages/detalleSerie.html"><img
                         src="../assets/images/Series/01_Bridgerton.jpg" alt="serie1">
                     <div class="text">
                         <h3>
@@ -102,7 +103,7 @@
                             el mundo competitivo de la alta sociedad de Londres durante el período Regencia.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/02_Witcher.jpg"
+            <div id="serie2" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/02_Witcher.jpg"
                         alt="serie2">
                     <div class="text">
                         <h3>
@@ -113,7 +114,7 @@
                             debido a las ansias del Imperio de Nilfgaard por ampliar su territorio.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/03_LastOfUs.jpg"
+            <div id="serie3" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/03_LastOfUs.jpg"
                         alt="serie3">
                     <div class="text">
                         <h3>
@@ -124,7 +125,7 @@
                             propagarse.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img src="../assets/images/Peliculas/04_Akira.jpg"
+            <div id="pelicula4" class="gridItem"><a href="../pages/detallePeli.html"><img src="../assets/images/Peliculas/04_Akira.jpg"
                         alt="peli4">
                     <div class="text">
                         <h3>
@@ -135,7 +136,7 @@
                             posteriormente la megaciudad fue reconstruida y rebautizada como Neo-Tokio.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula5" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/05_Interstellar.jpg" alt="peli5">
                     <div class="text">
                         <h3>
@@ -148,7 +149,7 @@
                             poltergeist.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula6" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/06_Gladiador.jpg" alt="peli6">
                     <div class="text">
                         <h3>
@@ -159,7 +160,7 @@
                             cerca de Vindobona, poniendo fin a una larga guerra en el limes del imperio romano.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/04_Merlina.jpg"
+            <div id="serie4" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/04_Merlina.jpg"
                         alt="serie4">
                     <div class="text">
                         <h3>
@@ -171,7 +172,7 @@
                             Nevermore Academy, una escuela para marginados.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/05_Dark.png"
+            <div id="serie5" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/05_Dark.png"
                         alt="serie5">
                     <div class="text">
                         <h3>
@@ -183,7 +184,7 @@
                             conspiración de viaje en el tiempo que abarca tres generaciones.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/06_You.jpg"
+            <div id="serie6" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/06_You.jpg"
                         alt="serie6">
                     <div class="text">
                         <h3>
@@ -196,7 +197,7 @@
                             eliminar los obstáculos a su "romance", incluidos sus amigos y su exnovio.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula7" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/07_StarWarsRetornoJedi.jpeg" alt="peli7">
                     <div class="text">
                         <h3>
@@ -207,7 +208,7 @@
                             las garras del vil Jabba.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula8" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/08_ClubPelea.jpg" alt="peli8">
                     <div class="text">
                         <h3>
@@ -219,7 +220,7 @@
                             para ver lo que es el sufrimiento de verdad.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula9" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/09_TheBatman.jpg" alt="peli9">
                     <div class="text">
                         <h3>
@@ -231,7 +232,7 @@
                             investiga el hecho junto al Departamento de Policía de Gotham City.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/07_Titans.jpg"
+            <div id="serie7" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/07_Titans.jpg"
                         alt="serie7">
                     <div class="text">
                         <h3>
@@ -241,7 +242,7 @@
                             contra el mal y otros peligros.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img
+            <div id="serie8" class="gridItem"><a href="../pages/detalleSerie.html"><img
                         src="../assets/images/Series/08_StrangerThings.jpg" alt="serie8">
                     <div class="text">
                         <h3>
@@ -253,7 +254,7 @@
                             secreto con lo paranormal y lo sobrenatural, a veces con sujetos de prueba humanos.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/09_Peaky.jpg"
+            <div id="serie9" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/09_Peaky.jpg"
                         alt="serie9">
                     <div class="text">
                         <h3>
@@ -266,7 +267,7 @@
                             ciudad.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula10" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/10_Jurassic.jpg" alt="peli10">
                     <div class="text">
                         <h3>
@@ -280,7 +281,7 @@
                             garantice la seguridad del sitio antes de su apertura al público en general.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img
+            <div id="pelicula11" class="gridItem"><a href="../pages/detallePeli.html"><img
                         src="../assets/images/Peliculas/11_JusticeLeague.png" alt="peli11">
                     <div class="text">
                         <h3>
@@ -291,7 +292,7 @@
                             Diana Prince, para enfrentarse a un enemigo aún mayor.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detallePeli.html"><img src="../assets/images/Peliculas/12_Dune.jpg"
+            <div id="pelicula12" class="gridItem"><a href="../pages/detallePeli.html"><img src="../assets/images/Peliculas/12_Dune.jpg"
                         alt="peli12">
                     <div class="text">
                         <h3>
@@ -302,7 +303,7 @@
                             la Casa Harkonnen como gobernante del feudo de Arrakis.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/10_Sopranos.jpeg"
+            <div id="serie10" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/10_Sopranos.jpeg"
                         alt="serie10">
                     <div class="text">
                         <h3>
@@ -314,7 +315,7 @@
                             que era un gánster.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/11_Breaking.jpg"
+            <div id="serie11" class="gridItem"><a href="../pages/detalleSerie.html"><img src="../assets/images/Series/11_Breaking.jpg"
                         alt="serie11">
                     <div class="text">
                         <h3>
@@ -326,7 +327,7 @@
                             pulmonar terminal se plantea qué pasará con su familia cuando él muera.</p>
                     </div>
                 </a></div>
-            <div class="gridItem"><a href="../pages/detalleSerie.html"><img
+            <div id="serie12" class="gridItem"><a href="../pages/detalleSerie.html"><img
                         src="../assets/images/Series/12_DeathsGame.jpg" alt="serie12">
                     <div class="text">
                         <h3>
