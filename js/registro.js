@@ -83,11 +83,11 @@ function EnviarFormRegistro() {
         alert("Error: El 'Numero de Tarjeta' debe ser entre 16 y 19 numeros.")
     }
     if (ValidarNumeroTarjeta(numeroTarjeta) == true) {
-        if(ValidarUltimoDigitoTarjeta()==false){
+        if (ValidarUltimoDigitoTarjeta() == false) {
             validar = false;
         }
     }
-    if(validar == true){
+    if (validar == true) {
         alert("¡Registro Exitoso!");
         window.location.href = "../index.html";
     }
