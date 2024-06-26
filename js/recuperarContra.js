@@ -15,7 +15,7 @@ window.onload = function () {
         }
     }
     enviar.addEventListener("click", function (event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado del formulario por el submit
+        event.preventDefault();
         EnviarFormRecuperarContra();
     });
     cancelar.addEventListener("click", function(event){

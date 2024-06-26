@@ -1,17 +1,17 @@
 window.onload = function () {
     var enviar = document.getElementById("enviar");
     enviar.addEventListener("click", function (event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado del formulario por el submit
+        event.preventDefault();
         EnviarForm();
     });
     var recuperar = document.getElementById("recuperarContra");
     recuperar.addEventListener("click", function (event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado del botón
+        event.preventDefault();
         window.location.href = "./pages/recuperarContra.html";
     });
     var registrarse = document.getElementById("registrarse");
     registrarse.addEventListener("click", function (event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado del botón
+        event.preventDefault();
         window.location.href = "./pages/registro.html";
     });
 }

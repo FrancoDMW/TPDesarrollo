@@ -195,16 +195,14 @@ const items = [
 
 function renderItems(category, format, searchTerm) {
     const container = document.querySelector('.gridImagenes');
-    container.innerHTML = ''; // Limpiar el contenido anterior
-
-    // Filtrar los elementos según la categoría, formato y término de búsqueda
+    container.innerHTML = '';
+    
     const filteredItems = items.filter(item => 
         (category === 'all' || item.genero === category) &&
         (format === 'all' || item.formato === format) &&
         (searchTerm === '' || item.titulo.toLowerCase().includes(searchTerm.toLowerCase()))
     );
 
-    // Agregar los elementos filtrados al DOM
     filteredItems.forEach(item => {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'gridItem';
@@ -221,14 +219,12 @@ function renderItems(category, format, searchTerm) {
     });
 }
 
-// Manejar el cambio de categoría
 document.getElementById('selectCat').addEventListener('change', function() {
     const selectedCategory = this.value === 'all' ? 'all' : this.options[this.selectedIndex].text.toLowerCase();
     const searchTerm = document.getElementById('busqueda').value;
     renderItems(selectedCategory, 'all', searchTerm);
 });
 
-// Manejar el clic en los enlaces de series y películas
 document.getElementById('aSeries').addEventListener('click', function() {
     const searchTerm = document.getElementById('busqueda').value;
     renderItems('all', 'serie', searchTerm);
@@ -239,7 +235,6 @@ document.getElementById('aPeliculas').addEventListener('click', function() {
     renderItems('all', 'pelicula', searchTerm);
 });
 
-// Manejar el evento de búsqueda
 document.getElementById('busqueda').addEventListener('input', function() {
     const searchTerm = this.value;
     const selectedCategory = document.getElementById('selectCat').value === 'all' ? 'all' : document.getElementById('selectCat').options[document.getElementById('selectCat').selectedIndex].text.toLowerCase();
@@ -247,7 +242,6 @@ document.getElementById('busqueda').addEventListener('input', function() {
     renderItems(selectedCategory, format, searchTerm);
 });
 
-// Renderizar todos los elementos por defecto al cargar la página
 window.onload = function() {
     renderItems('all', 'all', '');
 };
