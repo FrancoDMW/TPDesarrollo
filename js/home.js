@@ -193,17 +193,17 @@ const items = [
     }
 ];
 
-function renderItems(category, format, searchTerm) {
+function cargarPelis(categoria, formato, busqueda) {
     const container = document.querySelector('.gridImagenes');
     container.innerHTML = '';
-    
-    const filteredItems = items.filter(item => 
-        (category === 'all' || item.genero === category) &&
-        (format === 'all' || item.formato === format) &&
-        (searchTerm === '' || item.titulo.toLowerCase().includes(searchTerm.toLowerCase()))
+
+    const pelisFiltradas = items.filter(item =>
+        (categoria === 'all' || item.genero === categoria) &&
+        (formato === 'all' || item.formato === formato) &&
+        (busqueda === '' || item.titulo.toLowerCase().includes(busqueda.toLowerCase()))
     );
 
-    filteredItems.forEach(item => {
+    pelisFiltradas.forEach(item => {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'gridItem';
         itemDiv.innerHTML = `
@@ -219,29 +219,29 @@ function renderItems(category, format, searchTerm) {
     });
 }
 
-document.getElementById('selectCat').addEventListener('change', function() {
-    const selectedCategory = this.value === 'all' ? 'all' : this.options[this.selectedIndex].text.toLowerCase();
-    const searchTerm = document.getElementById('busqueda').value;
-    renderItems(selectedCategory, 'all', searchTerm);
+document.getElementById('selectCat').addEventListener('change', function () {
+    const categoriaSeleccionada = this.value === 'all' ? 'all' : this.options[this.selectedIndex].text.toLowerCase();
+    const busqueda = document.getElementById('busqueda').value;
+    cargarPelis(categoriaSeleccionada, 'all', busqueda);
 });
 
-document.getElementById('aSeries').addEventListener('click', function() {
-    const searchTerm = document.getElementById('busqueda').value;
-    renderItems('all', 'serie', searchTerm);
+document.getElementById('aSeries').addEventListener('click', function () {
+    const busqueda = document.getElementById('busqueda').value;
+    cargarPelis('all', 'serie', busqueda);
 });
 
-document.getElementById('aPeliculas').addEventListener('click', function() {
-    const searchTerm = document.getElementById('busqueda').value;
-    renderItems('all', 'pelicula', searchTerm);
+document.getElementById('aPeliculas').addEventListener('click', function () {
+    const busqueda = document.getElementById('busqueda').value;
+    cargarPelis('all', 'pelicula', busqueda);
 });
 
-document.getElementById('busqueda').addEventListener('input', function() {
-    const searchTerm = this.value;
-    const selectedCategory = document.getElementById('selectCat').value === 'all' ? 'all' : document.getElementById('selectCat').options[document.getElementById('selectCat').selectedIndex].text.toLowerCase();
-    const format = document.querySelector('.aNav.active')?.id === 'aSeries' ? 'serie' : document.querySelector('.aNav.active')?.id === 'aPeliculas' ? 'pelicula' : 'all';
-    renderItems(selectedCategory, format, searchTerm);
+document.getElementById('busqueda').addEventListener('input', function () {
+    const busqueda = this.value;
+    const categoriaSeleccionada = document.getElementById('selectCat').value === 'all' ? 'all' : document.getElementById('selectCat').options[document.getElementById('selectCat').selectedIndex].text.toLowerCase();
+    const formato = document.querySelector('.aNav.active')?.id === 'aSeries' ? 'serie' : document.querySelector('.aNav.active')?.id === 'aPeliculas' ? 'pelicula' : 'all';
+    cargarPelis(categoriaSeleccionada, formato, busqueda);
 });
 
-window.onload = function() {
-    renderItems('all', 'all', '');
+window.onload = function () {
+    cargarPelis('all', 'all', '');
 };

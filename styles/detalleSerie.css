@@ -19,6 +19,8 @@
 .sugeridosDetalle{
     display: flex;
     gap: 5px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .gridItemDetalle {
@@ -27,15 +29,14 @@
 }
 
 .gridItemDetalle img{
-    width: 100%;
+    width: 95%;
     height: 200px;
     border-radius: 10%;
 }
 
 .gridItemDetalle img:hover{
-    height: 220px;
     transition:.5s;
-    box-shadow: 0px 15px 10px #000000;
+    box-shadow: 0px 100px 20px #000000;
 }
 
 .descrip{
